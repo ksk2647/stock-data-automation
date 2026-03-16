@@ -55,7 +55,7 @@ stock-data-automation
 ## 1. 저장소 클론
 
 ```bash
-git clone https://github.com/yourname/stock-data-automation.git
+git clone https://github.com/ksk2647/stock-data-automation.git
 cd stock-data-automation
 ```
 
