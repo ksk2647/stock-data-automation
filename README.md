@@ -21,6 +21,7 @@ Node.js로 데이터를 수집하고, Python으로 Excel 처리를 수행하는 
 ---
 
 # Project Structure
+```text
 stock-data-automation
 ├─ src
 │ ├─ chart
@@ -45,6 +46,7 @@ stock-data-automation
 ├─ package.json
 ├─ requirements.txt
 └─ README.md
+```
 
 ---
 
@@ -55,15 +57,20 @@ stock-data-automation
 ```bash
 git clone https://github.com/yourname/stock-data-automation.git
 cd stock-data-automation
+```
 
 ## 2. Node 패키지 설치
 
+```bash
 npm install
+```
 
 
 ## 3. Python 패키지 설치
 
+```bash
 python3 -m pip install -r requirements.txt
+```
 
 ---
 
@@ -73,11 +80,13 @@ python3 -m pip install -r requirements.txt
 
 ## 전체 파이프라인 실행
 
+```bash
 npm run all
+```
 
 
 ## 실행 과정
-
+```text
 종목 목록
    ↓
 차트 Excel 생성
@@ -89,15 +98,23 @@ Excel에 주석 추가
 테마 정보 수집
    ↓
 최종 Excel 생성
+```
 
 ## 개별 실행
 
 각 단계는 개별적으로 실행할 수도 있습니다.
-
+```bash
 npm run chart
+```
+```bash
 npm run comment:fetch
+```
+```bash
 npm run comment:apply
+```
+```bash
 npm run theme
+```
 
 ---
 
