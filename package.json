@@ -1,0 +1,20 @@
+{
+  "name": "stock-data-automation",
+  "version": "1.0.0",
+  "description": "Scripts for generating Excel reports from Korean stock data",
+  "main": "index.js",
+  "scripts": {
+    "chart": "node src/chart/generate-chart-excel.js",
+    "comment:fetch": "node src/comment/get-comment.js",
+    "comment:apply": "python3 src/comment/add-comment-to-excel.py",
+    "theme": "node src/theme/run-theme-pipeline.js"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "chardet": "^2.1.0",
+    "cheerio": "^1.0.0",
+    "exceljs": "^4.4.0",
+    "iconv-lite": "^0.6.3",
+    "xlsx": "^0.18.5"
+  }
+}

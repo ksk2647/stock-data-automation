@@ -1,0 +1,5 @@
+node_modules/
+output/*.xlsx
+src/comment/data/*.json
+src/theme/data/*.json
+!data/sample-stock-codes.json
